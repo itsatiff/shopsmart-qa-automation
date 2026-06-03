@@ -1,0 +1,23 @@
+{
+  "name": "shopsmart-qa-project",
+  "version": "1.0.0",
+  "description": "ShopSmart QA Automation Portfolio project with Express, PostgreSQL, frontend pages, and Playwright tests.",
+  "main": "services/app.js",
+  "scripts": {
+    "start": "node services/app.js",
+    "dev": "nodemon services/app.js",
+    "db:create": "node configs/createSchema.js",
+    "db:seed": "node configs/initData.js",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "nodemon": "^3.1.9"
+  }
+}

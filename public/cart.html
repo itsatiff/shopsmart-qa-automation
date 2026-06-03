@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+    <header class="site-header">
+        <a class="logo" href="products.html">ShopSmart</a>
+        <nav>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span id="cartCount" class="cart-count">0</span></a>
+            <button id="logoutButton" class="ghost-button" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="section-heading">
+            <p class="eyebrow">Your bag</p>
+            <h1>Cart</h1>
+        </section>
+
+        <section class="cart-layout">
+            <div id="cartItems" class="cart-list" aria-live="polite"></div>
+            <aside class="order-summary">
+                <h2>Order summary</h2>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <strong id="cartSubtotal">$0.00</strong>
+                </div>
+                <a class="primary-button block-link" href="checkout.html">Checkout</a>
+                <a class="secondary-link" href="products.html">Continue shopping</a>
+            </aside>
+        </section>
+        <p id="cartMessage" class="success-message" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="products">
+    <header class="site-header">
+        <a class="logo" href="products.html">ShopSmart</a>
+        <nav>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span id="cartCount" class="cart-count">0</span></a>
+            <button id="logoutButton" class="ghost-button" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">New season collection</p>
+                <h1>Premium gear for sharper workdays.</h1>
+                <p>Shop tested essentials with refined details, fast browsing, and a smooth checkout experience.</p>
+                <a class="primary-link" href="#productsGrid">Shop products</a>
+            </div>
+            <div class="hero-carousel" aria-label="Featured products">
+                <div class="carousel-track" id="carouselTrack"></div>
+            </div>
+        </section>
+
+        <section class="section-heading">
+            <p class="eyebrow">Catalog</p>
+            <h2>Featured products</h2>
+        </section>
+
+        <section id="productsGrid" class="product-grid" aria-live="polite"></section>
+        <p id="productsError" class="error-message centered" role="alert"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

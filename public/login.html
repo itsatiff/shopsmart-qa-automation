@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+    <main class="login-shell">
+        <section class="login-brand">
+            <p class="eyebrow">ShopSmart</p>
+            <h1>Curated tech essentials for focused work and modern living.</h1>
+            <p>Sign in to explore premium products, save your picks, and complete a smooth checkout.</p>
+        </section>
+
+        <section class="login-panel" aria-label="Login form">
+            <h2>Sign in</h2>
+            <p class="muted">Use your ShopSmart account.</p>
+            <form id="loginForm" novalidate>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" placeholder="standard_user">
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="secret_sauce">
+
+                <p id="loginError" class="error-message" role="alert"></p>
+                <button class="primary-button" type="submit">Sign in</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

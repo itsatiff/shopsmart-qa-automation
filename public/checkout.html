@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+    <header class="site-header">
+        <a class="logo" href="products.html">ShopSmart</a>
+        <nav>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span id="cartCount" class="cart-count">0</span></a>
+            <button id="logoutButton" class="ghost-button" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="section-heading">
+            <p class="eyebrow">Secure checkout</p>
+            <h1>Delivery details</h1>
+        </section>
+
+        <section class="checkout-layout">
+            <form id="checkoutForm" class="checkout-form" novalidate>
+                <label for="firstName">First name</label>
+                <input id="firstName" name="first_name" type="text">
+
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="last_name" type="text">
+
+                <label for="postalCode">Postal code</label>
+                <input id="postalCode" name="postal_code" type="text">
+
+                <p id="checkoutError" class="error-message" role="alert"></p>
+                <p id="checkoutSuccess" class="success-message" role="status"></p>
+                <button class="primary-button" type="submit">Place order</button>
+            </form>
+
+            <aside class="order-summary">
+                <h2>Cart total</h2>
+                <div id="checkoutItems" class="mini-items"></div>
+                <div class="summary-line">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">$0.00</strong>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
